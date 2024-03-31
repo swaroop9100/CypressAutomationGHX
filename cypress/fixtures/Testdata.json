@@ -1,0 +1,21 @@
+{
+  "url":"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+  "url1":"https://automationexercise.com/",
+  "email": "syandapalli1@ghx.com",
+  "password1":"Swaroop123",
+  "invalidemail":"syandapalli@ghx.com",
+  "invalidpassword":"Swaroop12",
+  "productname":"Kids",
+  "dateurl":"https://phptravels.net/",
+  "username":"Admin",
+  "password":"admin123",
+  "dashboardheading":"PIM",
+  "employeHeading":"Add Employee",
+  "fname":"Swaroop",
+  "mname":"YS",
+  "lname":"Reddy",
+  "nickname":"Swar",
+  "lnumber":"123654",
+  "ssnnumber":"987456",
+  "sinnumber":"3698520"
+}
