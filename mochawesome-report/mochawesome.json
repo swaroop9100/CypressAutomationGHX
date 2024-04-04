@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
+    "tests": 1,
     "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2024-04-01T12:33:48.986Z",
-    "end": "2024-04-01T12:34:04.615Z",
-    "duration": 15629,
-    "testsRegistered": 2,
-    "passPercent": 50,
+    "failures": 0,
+    "start": "2024-04-04T06:50:44.365Z",
+    "end": "2024-04-04T06:50:54.006Z",
+    "duration": 9641,
+    "testsRegistered": 1,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,73 +18,49 @@
   },
   "results": [
     {
-      "uuid": "304db608-9e12-4c16-b7cb-06cf42ddbad4",
+      "uuid": "9dc329ad-819f-47ec-9f09-85d800f7bcca",
       "title": "",
-      "fullFile": "cypress\\e2e\\ssitproject\\Screenshot.cy.js",
-      "file": "cypress\\e2e\\ssitproject\\Screenshot.cy.js",
+      "fullFile": "cypress\\e2e\\XyzBank\\XyzBankManagerPage.cy.js",
+      "file": "cypress\\e2e\\XyzBank\\XyzBankManagerPage.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "14546589-db34-43a4-9b93-f25fe9674611",
-          "title": "End2End",
+          "uuid": "6516a9e7-515b-40c0-bc6f-97294725adcb",
+          "title": "XYZ bank Suite",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Place order with new user",
-              "fullTitle": "End2End Place order with new user",
+              "title": "Click on manager login button",
+              "fullTitle": "XYZ bank Suite Click on manager login button",
               "timedOut": null,
-              "duration": 8084,
+              "duration": 4562,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Screenshot.cy.js\\\\End2End -- Place order with new user.png\"\n    ]\n  ]\n}",
-              "code": "/* User Regirtration */\ncy.visit(\"https://demowebshop.tricentis.com/\");\ncy.wait(2000);\ncy.screenshot();",
+              "context": null,
+              "code": "//Clicking on manager login button\ncy.clickOnMangerLoginButton();",
               "err": {},
-              "uuid": "d70bc9b1-e66f-4968-a3fa-cb5e1e5318a8",
-              "parentUUID": "14546589-db34-43a4-9b93-f25fe9674611",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Place order with new user",
-              "fullTitle": "End2End Place order with new user",
-              "timedOut": null,
-              "duration": 2299,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Screenshot.cy.js\\\\End2End -- Place order with new user (failed).png\"\n    ]\n  ]\n}",
-              "code": "/* User Regirtration */\ncy.visit(\"https://demowebshop.tricentis/\");\ncy.wait(2000);\ncy.screenshot();",
-              "err": {
-                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://demowebshop.tricentis/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND demowebshop.tricentis\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
-                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://demowebshop.tricentis/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND demowebshop.tricentis\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:131400:74)\n    at visitFailedByErr (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:130792:12)\n    at <unknown> (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:131399:11)\n    at tryCatcher (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypressautomation/./cypress/e2e/ssitproject/Screenshot.cy.js:15:11)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND demowebshop.tricentis\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:108:26)",
-                "diff": null
-              },
-              "uuid": "4316073b-c889-4cf4-aeaf-bcf26110a9be",
-              "parentUUID": "14546589-db34-43a4-9b93-f25fe9674611",
+              "uuid": "70efe59f-5263-47b8-9af5-1761546dd1be",
+              "parentUUID": "6516a9e7-515b-40c0-bc6f-97294725adcb",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d70bc9b1-e66f-4968-a3fa-cb5e1e5318a8"
+            "70efe59f-5263-47b8-9af5-1761546dd1be"
           ],
-          "failures": [
-            "4316073b-c889-4cf4-aeaf-bcf26110a9be"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10383,
+          "duration": 4562,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

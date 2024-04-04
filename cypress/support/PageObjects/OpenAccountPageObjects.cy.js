@@ -6,10 +6,10 @@ class openAccountAddPageObjects {
     }
     bankManagerOpenAccount() {
 
-        return cy.xpath('//button[@class="btn btn-lg tab btn-primary"]')
+        return cy.xpath('(//button[@class="btn btn-lg tab"])[2]')
     }
     selectCustomer() {
-        return cy.xpath('//select[@name="userSelect"]')
+        return  cy.xpath('//select[@id="userSelect"]')
     }
     selectCurrency() {
         return cy.xpath('//select[@id="currency"]')
@@ -31,9 +31,9 @@ Cypress.Commands.add("openAccountForCustomer", () => {
     //Click on Open Account button
     openAccountObjects.bankManagerOpenAccount().click()
     //Select the Customer in customer dropdown
-    openAccountObjects.selectCustomer().select('Test User')
+    openAccountObjects.selectCustomer().select(5)
     //Select the currency in  currency dropdown
-    openAccountObjects.selectCurrency().select('Rupee')
+    openAccountObjects.selectCurrency().select(3)
     //Click on Process button on open account page
     openAccountObjects.clickOnProcessButton().click()
     //Verify the alert message

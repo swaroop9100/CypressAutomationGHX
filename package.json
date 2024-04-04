@@ -189,10 +189,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "run_cypressdashboard":"npx cypress run --record --key b8a1888d-b0c6-44cd-a984-67e5785dd998 --spec cypress/e2e/XyzBank/*.cy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": ""
 }
+

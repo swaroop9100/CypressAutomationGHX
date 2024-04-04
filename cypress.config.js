@@ -8,6 +8,8 @@ module.exports = defineConfig({
  //watchForFileChanges: false,
   numTestsKeptInMemory: 50,
   e2e: {
+
+    projectId: "7yxeah",
     setupNodeEvents(on, config) {
       /*cypressGrepPlugin(config)
 

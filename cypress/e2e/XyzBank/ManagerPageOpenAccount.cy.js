@@ -1,4 +1,4 @@
-import openAccountAddPageObjects from '../support/PageObjects/OpenAccountPageObjects.cy.js';
+//import openAccountAddPageObjects from '../support/PageObjects/OpenAccountPageObjects.cy.js'
 //Create the Suite
 describe("XYZ Bank Open Account",function(){
 
@@ -9,7 +9,7 @@ describe("XYZ Bank Open Account",function(){
         cy.fixture('test_data').then((data) => {
             this.data = data
             //Launching website for all it blocks
-            cy.launchWebsite(this.data.url)
+            cy.visit(this.data.url)
         })
     })
 
