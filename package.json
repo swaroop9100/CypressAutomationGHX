@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.5",
+    "@faker-js/faker": "^8.4.1",
     "cypress": "^13.6.1",
     "cypress-file-upload": "^5.0.8",
     "cypress-grep": "^3.0.4",
@@ -190,11 +191,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
-    "run_cypressdashboard":"npx cypress run --record --key b8a1888d-b0c6-44cd-a984-67e5785dd998 --spec cypress/e2e/XyzBank/*.cy.js"
+    "run_cypressdashboard": "npx cypress run --record --key b8a1888d-b0c6-44cd-a984-67e5785dd998 --spec cypress/e2e/XyzBank/*.cy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": ""
 }
-

@@ -4,11 +4,12 @@ module.exports = defineConfig({
   //To generate cypress Report
  // reporter: 'cypress-mochawesome-reporter',
  reporter: 'mochawesome',
+ retries:2,
  //To Stop Auto Rerun in test runner after saving the test use the below command
  //watchForFileChanges: false,
   numTestsKeptInMemory: 50,
   e2e: {
-
+    //For Cypress Cloud/Dashboard
     projectId: "7yxeah",
     setupNodeEvents(on, config) {
       /*cypressGrepPlugin(config)
@@ -23,13 +24,13 @@ module.exports = defineConfig({
       ////
       // implement node event listeners here
       //Launch Chrome browser in incognito mode
-      on("before:browser:launch", (browser={}, launchOptions) => {
+      /* on("before:browser:launch", (browser={}, launchOptions) => {
        if (browser.family === 'chromium' && browser.name !== "electron") {
          launchOptions.args.push("--incognito");
 
          }
         return launchOptions
-      });
+      }); */
       ////
     
       // implement node event listeners here

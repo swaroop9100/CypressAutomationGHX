@@ -20,11 +20,9 @@ class addCustomerPageObjects {
     addCustomerClickButton(){
         return cy.xpath('//button[@type="submit"]')
     }
-
 }
 // Create Object for Above Class - to get the intelisence
 const addCustomerPage = new  addCustomerPageObjects()
-
 
 //Create Custom Commands
 Cypress.Commands.add('AddCustomerButton',(firstName,lastName,postCode)=>{

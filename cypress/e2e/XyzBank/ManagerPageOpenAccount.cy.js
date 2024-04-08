@@ -1,4 +1,4 @@
-//import openAccountAddPageObjects from '../support/PageObjects/OpenAccountPageObjects.cy.js'
+//import openAccountAddPageObjects from 'cypress/support/PageObjects/OpenAccountPageObjects.cy.js'
 //Create the Suite
 describe("XYZ Bank Open Account",function(){
 

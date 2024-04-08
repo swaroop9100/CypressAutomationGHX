@@ -26,6 +26,7 @@ import managersPageObjects from '../support/PageObjects/BankManagerPageObjects.c
 import addCustomerPageObjects from '../support/PageObjects/AddCustomerPageObjects.cy.js';
 import openAccountAddPageObjects from '../support/PageObjects/OpenAccountPageObjects.cy.js';
 
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
@@ -60,3 +61,4 @@ module.exports = (on, config) => {
         }
     }); 
 }*/
+
