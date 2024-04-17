@@ -21,10 +21,16 @@ import 'cypress-mochawesome-reporter/register';
 require('cypress-xpath');
 //Using Cypress Grep for executing specific test cases like sanity,Regresstion test cases
 require('cypress-grep')()
+//Cypress iframe
+require ('cypress-iframe')
 
 import managersPageObjects from '../support/PageObjects/BankManagerPageObjects.cy.js';
 import addCustomerPageObjects from '../support/PageObjects/AddCustomerPageObjects.cy.js';
 import openAccountAddPageObjects from '../support/PageObjects/OpenAccountPageObjects.cy.js';
+import demoWebshopHomepageObjects from '../support/DemoShopPageObjects/DemoshopHomePageObjects.cy.js';
+import demoshopRegisterPageObjects from '../support/DemoShopPageObjects/DemoshopRegisterPageObjects.cy.js';
+import demoshopRegisterResult from '../support/DemoShopPageObjects/DemoshopRegisterResult.cy.js';
+
 
 
 // Alternatively you can use CommonJS syntax:

@@ -149,18 +149,33 @@ Cypress.Commands.add("EnterNewsOnTextbox",()=>{
     shopwebHomePageObjects.clickOnSubscribeButton().click()
 })
 //Left side category Navigation click on Books
-
+Cypress.Commands.add("clickOnBooksCategoryNavigation",()=>{
+    shopwebHomePageObjects.clickOnBooksInCategoryNavigation().click()
+})
 //Left side category Navigation click on Computers
-
+Cypress.Commands.add("clickOnComputerCategoryNavigation",()=>{
+    shopwebHomePageObjects.clickOnComputersInCategoryNavigation().click()
+})
 //Left side category Navigation click on Electronics
-
+Cypress.Commands.add("clickOnElectronicsCategoryNavigation",()=>{
+    shopwebHomePageObjects.clickOnElectronicsInCategoryNavigation().click()
+})
 //Left side category Navigation click on Apparel and Shoes
-
+Cypress.Commands.add("clickOnApparelandShoesCategoryNavigation",()=>{
+    shopwebHomePageObjects.clickOnApparelAndShoesInCategoryNavigation().click()
+})
 //Left side category Navigation click on Digital downloads
-
+Cypress.Commands.add("clickOnDigitalDownloadsCategoryNavigation",()=>{
+    shopwebHomePageObjects.clickOnDigitalDownloadsInCategoryNavigation().click()
+})
 //Left side category Navigation click on Jewelry
-
+Cypress.Commands.add("clickOnJewelryCategoryNavigation",()=>{
+    shopwebHomePageObjects.clickOnJewelryInCategoryNavigation().click()
+})
 //Left side category Navigation click on Gift Cards
+Cypress.Commands.add("clickOnElectronicsCategoryNavigation",()=>{
+    shopwebHomePageObjects.clickOnGiftCardsInCategoryNavigation().click()
+})
 
 //Export the page objects
 export default demoWebshopHomepageObjects

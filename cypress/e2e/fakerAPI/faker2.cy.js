@@ -25,7 +25,7 @@ describe("faker API Usage", function () {
             cy.xpath('//input[@id="input-lastname"]').type(faker.person.lastName())
             cy.xpath('//input[@id="input-email"]').type(faker.internet.email())
             cy.xpath('//input[@id="input-telephone"]').type(faker.phone.number())
-            cy.xpath('//input[@id="input-password"]').type()
+            cy.xpath('//input[@id="input-password"]').type(fpassword)
             cy.xpath('//input[@id="input-confirm"]').type(fpassword)
             cy.xpath('//input[@type="checkbox"]').check()
             cy.xpath('//input[@type="submit"]').click()
