@@ -1,6 +1,6 @@
 
 
-describe('Alerts', () => {
+describe('Verifying Alerts', () => {
 
     beforeEach(function () {
         cy.visit("https://the-internet.herokuapp.com/javascript_alerts")
@@ -51,14 +51,14 @@ describe('Alerts', () => {
 
     it("Authenticated window alert", () => {
         //Approch number1
-        // cy.visit("https://the-internet.herokuapp.com/basic_auth",{auth:{username:"admin",password:"admin"}})
+        cy.visit("https://the-internet.herokuapp.com/basic_auth",{auth:{username:"admin",password:"admin"}})
 
-        // cy.get('div[class="example"] p').should('have.contain','Congratulations!')
+         cy.get('div[class="example"] p').should('have.contain','Congratulations!')
 
-        //Approch number2
+        /* //Approch number2
 
         cy.visit("https://admin:admin@the-internet.herokuapp.com/basic_auth")
-        cy.get('div[class="example"] p').should('have.contain','Congratulations!')
+        cy.get('div[class="example"] p').should('have.contain','Congratulations!') */
     })
 
 })
